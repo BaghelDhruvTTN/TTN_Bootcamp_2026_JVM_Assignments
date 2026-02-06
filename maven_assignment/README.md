@@ -22,6 +22,17 @@ To build the project, run the following command from the project root: mvn packa
 - This README will be updated as new Maven concepts are implemented
 - References and documentation links are provided below
 
+## Executable JAR
+
+The project is configured using the Maven JAR Plugin to create an executable JAR.
+
+Run:
+java -jar target/maven_assignment-1.0-SNAPSHOT.jar
+
+Output:
+Hello World
+
+
 ## References
 
 - Maven Official Documentation: https://maven.apache.org/guides/index.html
