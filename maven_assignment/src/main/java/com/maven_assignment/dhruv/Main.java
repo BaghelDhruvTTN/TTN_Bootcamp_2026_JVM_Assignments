@@ -1,7 +1,9 @@
-package JVM_TTN_Assignments.maven_assignment.src.main.java.com.maven_assignment.dhruv;
+package com.maven_assignment.dhruv;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println(StringUtils.isBlank("   "));
     }
 }
