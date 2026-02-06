@@ -25,3 +25,5 @@ To build the project, run the following command from the project root: mvn packa
 ## References
 
 - Maven Official Documentation: https://maven.apache.org/guides/index.html
+
+- JitPack Repository: https://jitpack.io
