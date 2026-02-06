@@ -1,0 +1,27 @@
+# Maven Assignment Project
+
+This project is created as part of a Maven session assignment.
+It demonstrates core Maven concepts through a hands-on, incremental approach.
+
+The project will be extended step by step to cover:
+- Dependency management
+- Repository configuration
+- Maven plugins
+- Dependency scopes
+- Multi-module project structure
+
+## Build Instructions
+
+To build the project, run the following command from the project root: mvn package
+
+
+## Submission Notes
+
+- The complete Maven project is included in this repository
+- Generated directories such as `target/` and IDE-specific files (e.g. `.idea/`) are excluded using `.gitignore`
+- This README will be updated as new Maven concepts are implemented
+- References and documentation links are provided below
+
+## References
+
+- Maven Official Documentation: https://maven.apache.org/guides/index.html
