@@ -1,40 +1,99 @@
-# Maven Assignment Project
+# Maven Assignment
 
-This project is created as part of a Maven session assignment.
-It demonstrates core Maven concepts through a hands-on, incremental approach.
+This repository contains the solution for the Maven session assignment.
+It demonstrates core Maven concepts using both a single-module setup and a multi-module project.
 
-The project will be extended step by step to cover:
-- Dependency management
-- Repository configuration
-- Maven plugins
-- Dependency scopes
-- Multi-module project structure
+---
 
-## Build Instructions
+## Project Structure
 
-To build the project, run the following command from the project root: mvn package
+```
+maven_assignment
+└── multimodule
+    └── multimodule-parent
+        ├── module-a
+        ├── module-b
+        └── pom.xml
+```
 
+---
 
-## Submission Notes
+## Question 1: Project Submission Requirements
 
-- The complete Maven project is included in this repository
-- Generated directories such as `target/` and IDE-specific files (e.g. `.idea/`) are excluded using `.gitignore`
-- This README will be updated as new Maven concepts are implemented
-- References and documentation links are provided below
+- Complete Maven project is submitted
+- Generated directories such as `target/` and IDE files like `.idea/` are excluded using `.gitignore`
+- This README file documents the assignment
+- Relevant references are provided at the end
 
-## Executable JAR
+---
 
-The project is configured using the Maven JAR Plugin to create an executable JAR.
+## Question 2: Add a Maven Dependency and Repository
 
-Run:
+Maven dependencies are added in `pom.xml` using Maven Central repository.
+
+Example dependency:
+- `org.apache.commons:commons-lang3`
+
+The dependency is successfully resolved and used in the project.
+
+---
+
+## Question 3: Add a New Repository and Use Its Dependencies
+
+An additional repository (JitPack) is configured in `pom.xml`.
+Dependencies are resolved using the defined repositories.
+
+---
+
+## Question 4: Create an Executable JAR Using Maven JAR Plugin
+
+The Maven JAR Plugin is configured to create an executable JAR.
+
+Build command:
+```bash
+mvn clean package
+```
+
+Run command:
+```bash
 java -jar target/maven_assignment-1.0-SNAPSHOT.jar
+```
 
 Output:
+```
 Hello World
+```
 
+---
+
+## Question 5: Dependency Scopes
+
+Different Maven dependency scopes are demonstrated in `pom.xml`:
+
+- **compile** – commons-lang3  
+- **runtime** – mysql-connector-j  
+- **test** – junit-jupiter  
+- **provided** – jakarta.servlet-api  
+
+---
+
+## Question 6: Multi-Module Maven Project
+
+A multi-module Maven project is created under the `multimodule` directory.
+
+- `multimodule-parent` acts as the parent POM
+- `module-a` and `module-b` are child modules
+
+To build all modules from the parent directory:
+```bash
+mvn clean package
+```
+
+This command generates JAR files for both modules.
+
+---
 
 ## References
 
 - Maven Official Documentation: https://maven.apache.org/guides/index.html
-
 - JitPack Repository: https://jitpack.io
