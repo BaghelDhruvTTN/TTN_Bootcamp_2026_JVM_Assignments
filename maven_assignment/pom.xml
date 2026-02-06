@@ -27,16 +27,40 @@
     </repositories>
 
     <dependencies>
+
+        <!-- COMPILE scope (default) -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.14.0</version>
-        </dependency>  
-        <dependency>
-            <groupId>com.github.jitpack</groupId>
-            <artifactId>maven-simple</artifactId>
-            <version>1.0</version>
         </dependency>
+
+        <!-- RUNTIME scope -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.33</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
+
+        <!-- TEST scope -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- PROVIDED scope -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
 
     </dependencies>
     <build>
